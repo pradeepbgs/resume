@@ -1,0 +1,266 @@
+%-------------------------
+% Resume in Latex
+% Author : Abey George
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    {\Huge \scshape Pradeep Kumar} \\ \vspace{1pt}
+    New Delhi, Delhi \\ \vspace{1pt}
+    \small   \href{mailto:pradeepkumarbgs62019@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{pradeepkumarbgs62019@gmail.com}} ~ 
+    \href{https://www.linkedin.com/in/pradeep-sahu-180b3423a/}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{linkedin}}  ~
+    \href{https://github.com/pradeepbgs}{\raisebox{-0.2\height}\faGithub\ \underline{github}} ~
+    \vspace{-8pt} \\
+    \vspace{18pt}
+    Hello, I'm Pradeep Kumar Sahu, a Software Developer with a strong foundation in web technologies. \\ 
+    I recently graduated and am passionate about coding and building scalable web applications. My expertise lies in full stack development, Mobile Application Development with React Native.
+    \vspace{-8pt}
+\end{center}
+
+
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {SBSS College}{ 2021 --  2024}
+      { \textbf{LNMU University  } \textbf{}}{Begusarai, Bihar}
+  \resumeSubHeadingListEnd
+  
+
+%------RELEVANT COURSEWORK-------
+\section{TECHNICAL SKILLS}
+ \vspace{3pt}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{\normalsize{Languages:}}{ \normalsize{ JavaScript/TypeScript , Python , Java/Golang (learning and exploring)}} \\
+
+     \textbf{\normalsize{Developer Tools:}}{ \normalsize{ Git , GitHub , Docker , Nginx , Postman }} \\
+     
+     \textbf{\normalsize{Technologies/Frameworks:}}
+     {\normalsize{ ReactjS, NextjS, NodejS, Django}} \\
+
+     \textbf{\normalsize{Databases:}}
+     {\normalsize{ PostgreSQL, MongoDB, Redis }} \\
+
+     \textbf{\normalsize{Mobile application development:}}{ \normalsize{ React Native with Expo }} \\
+
+     \textbf{\normalsize{System Design:}}{ \normalsize{ *Learning High-Level System Design concepts including scalability, load balancing, and distributed systems }} \\
+    }}}
+ \end{itemize}
+
+
+    
+    
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+\vspace{-5pt}
+    \resumeProjectHeading
+          {\href{https://github.com/pradeepbgs/PingFile}{\textbf{\large{\underline{PingFile CLI}}} \href{https://github.com/pradeepbgs/PingFile}{
+           \href{https://github.com/pradeepbgs/PingFile}{\raisebox{-0.2\height}\faGithub\ \underline{}} ~\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{A Command-Line Tool for API Testing and Execution}}}{}
+           \vspace{-5pt}
+         \resumeItemListStart
+\resumeItem{\normalsize{
+    \textbf{PingFile CLI} is a command-line tool designed to simplify API testing and execution by allowing users to run API requests directly from configuration files in \textbf{JSON}, \textbf{YAML}, or \textbf{PKFILE} formats.
+}}
+\resumeItem{\normalsize{
+    \textbf{Key Features:}
+    \begin{itemize}[leftmargin=0.25in, label={}]
+        \item Supports multiple file formats (\textbf{JSON}, \textbf{YAML}, \textbf{PKFILE}) for defining API requests.
+        \item Provides colorful terminal output with detailed status codes, headers, and response bodies.
+        \item Allows saving API responses and supports multithreaded execution for batch processing.
+        \item Includes advanced features like cookie management, credential handling, and file uploads.
+    \end{itemize}
+}}
+\resumeItem{\normalsize{
+    \textbf{Impact:} Simplifies API testing workflows for developers by providing a lightweight, cross-platform tool that integrates seamlessly into development pipelines.
+}}
+\resumeItemListEnd
+
+    \vspace{-5pt}
+    \resumeProjectHeading
+          {\href{https://github.com/pradeepbgs/diesel}{\textbf{\large{\underline{Diesel.js}}} \href{https://github.com/pradeepbgs/diesel}{
+           \href{https://github.com/pradeepbgs/diesel}{\raisebox{-0.2\height}\faGithub\ \underline{}} ~\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{A fast , minimilistic web framework for building robust & fast APIs  }}}{}
+           \vspace{-5pt}
+         \resumeItemListStart
+\resumeItem{\normalsize{\textbf{Diesel.js} is a high-performance, Bun.js-based web framework with Express-like syntax, built for rapid API creation. It supports lazy parsing, dynamic routing, and efficient middleware execution to enhance speed and reduce runtime overhead.}}
+\resumeItem{\normalsize{Features include \textbf{Route Security} with the \texttt{filter()} method for managing public and protected routes, enabling fine-grained access control via \texttt{permitAll()} and \texttt{require()} functions, and custom JWT-based authentication for sensitive endpoints.}}
+\resumeItem{\normalsize{Diesel.js also supports \textbf{Lifecycle Hooks} (e.g., \texttt{onRequest}, \texttt{preHandler}, \texttt{postHandler}, \texttt{onSend}) to execute custom logic such as logging, authentication, and data handling at various stages of the request lifecycle.}}
+\resumeItemListEnd
+
+          
+    \resumeSubHeadingListEnd
+    \resumeSubHeadingListStart
+       \resumeProjectHeading
+          {\href{https://video-backend-3ot2.onrender.com/}{\textbf{\large{\underline{DevTube}}} \href{https://video-backend-3ot2.onrender.com/}{
+          \href{https://github.com/pradeepbgs/DevTube-backend}{\raisebox{-0.2\height}\faGithub\ \underline{}}\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Recat , Express.js , MongoDB with Aggregation pipeline}}}{}
+          \vspace{-5pt}
+          \resumeItemListStart
+\resumeItem{\normalsize{About Project: \textbf{DevTube is a video-sharing platform where users can authenticate and access personalized features.}}}
+\resumeItem{\normalsize{\textbf{Users can upload and watch videos, like and subscribe to channels, and comment on videos.}}}
+\resumeItem{\normalsize{\textbf{Includes social sharing features like tweet functionality for easy video sharing.}}}
+\vspace{10pt}
+\resumeItemListEnd
+
+          \vspace{-13pt}
+          
+    \resumeSubHeadingListEnd
+\vspace{12pt}
+
+%
+
+
+
+
+ 
+
+
+\end{document}
